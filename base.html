@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+              <h6>Laptop Gamer AMD</h6>
+              <p="precio">Precio base: $ <span id="precio">400.000</span> </p>
+        
+              <p>Cantidad:
+                <span id="cantidad">0</span>
+                <button onclick="
+                    precio = 400000
+                    cantidad = document.querySelector('#cantidad')
+                    cuenta = Number(cantidad.innerHTML)
+                    cuenta = cuenta + 1
+                    cantidad.innerHTML = cuenta
+                    precioFinal = precio * cuenta
+                    total = document.querySelector('#total')
+                    total.innerHTML = precioFinal"
+                >+</button">
+                
+                <button onclick="
+                    Precio = 400000
+                    cantidad = document.querySelector('#cantidad')
+                    cuenta = Number(cantidad.innerHTML)
+                    cuenta = cuenta - 1
+                    cantidad.innerHTML = cuenta
+                    precioFinal = precio * cuenta
+                    total = document.querySelector('#total')
+                    total.innerHTML = precioFinal"
+                    "
+                >-</button>
+              </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span id="total">0</span> </p>
+    </div>
+
+    <script src="index.js">
+      
+
+    </script>
+</body>
+</html>
